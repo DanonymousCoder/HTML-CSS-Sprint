@@ -1,9 +1,16 @@
+@font-face {
+    font-family: "orange";
+    src: url("orange-lemonade.regular.otf");
+}
+
 body {
     text-align: center;
     margin: 0;
+    font-family: "orange";
 }
 
 .hero {
+    font-family: "orange";
     background-image: url("https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/LAGOS.jpg");
     background-size: cover;
     height: 700px;
@@ -15,7 +22,8 @@ body {
 }
 
 .hero a {
-    font-family: Arial;
+    font-family: "orange";
+    letter-spacing: 5.5;
     font-weight: 700;
     font-size: 38px;
     line-height: 100%;
@@ -87,4 +95,60 @@ main p {
     line-height: 100%;
     text-align: center;
     color: #1D3557;
+}
+
+footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    height: 344px;
+    background-color: #A8DADC;
+    box-shadow: 0px 6px 0px #1D3557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 80px auto;
+}
+
+footer img {
+    border-radius: 10px;
+    width: 200px;
+    height: 248px;
+}
+
+.right {
+    width: 50%;
+    color: #1D3557;
+}
+
+footer h4 {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.bold {
+    font-style: normal;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
 }
