@@ -42,3 +42,49 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+main {
+    padding: 40px 80px;
+    background-color: #F1FAEE;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+main h3 {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #1D3557;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+img {
+    border-radius: 50%;
+    background-size: cover;
+}
+
+main h5 {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #1D3557;
+}
+
+main p {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #1D3557;
+}
