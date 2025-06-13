@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+.hero {
+    background-image: url("https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/LAGOS.jpg");
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.hero a {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 100%;
+    text-decoration: none;
+    background-color: #1D3557;
+    color: inherit;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero a:hover,
+.hero a:focus {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-shadow: 0px 0px 5px black;
+}
+
+.hero p {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 21.72px;
+    line-height: 100%;
+    background-color: #457B9D;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
