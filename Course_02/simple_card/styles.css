@@ -1,0 +1,37 @@
+body {
+    background-color: #2D2E36;
+    text-align: center;
+}
+
+.card {
+    background-color: #383A45;
+    margin: auto 10px;
+    border-radius: 8px;
+    padding: 0 auto;
+}
+
+.mountain {
+    width: 260px;
+    height: 240px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.texts {
+    margin: 0 20px 15px 20px;
+    text-align: left;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 153%;
+    color: #8D91A6;
+}
