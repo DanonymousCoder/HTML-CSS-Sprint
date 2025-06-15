@@ -6,9 +6,69 @@
     margin: 0;
 }
 
+body {
+    background: #FFFFFF linear-gradient(238.71deg, #BD00FF 7.63%, #00A3FF 117.53%);
+    background-attachment: fixed;
+    padding: 1em .5em;
+}
+
+.container {
+    height: calc(100vh - 2em);
+    background-color: #221F26;
+    background-image: url("./images/illustration.jpg");
+    background-size: cover;
+    background-blend-mode: screen;
+    border-radius: 13px;
+    background-position: -100px;
+}
+
+aside {
+    height: 100%;
+    background-color: #2C2931;
+    max-width: 300px;
+    z-index: 1;
+}
+
+aside img {
+    margin: 3rem 4rem;
+    height: 15px;
+    transform: scaleX(1);
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+aside img:hover {
+    transform: scaleX(1) translateX(6px);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+li>a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 111%;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+}
+
+.on {
+    background-color: #4497FF;
+    display: block;
+    width: auto;
+}
+
+/*
 .container {
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+        linear-gradient(238.71deg, #BD00FF 7.63%, #00A3FF 117.53%);
     background-color: #221F26;
     background-image: url("./images/illustration.jpg");
     background-size: cover;
@@ -30,6 +90,7 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    display: block !important;
 }
 
 .active img {
@@ -126,3 +187,6 @@ button {
     background-color: transparent;
     border: none;
 }
+
+@media screen and (min-width: 1024px; ) {}
+*/
