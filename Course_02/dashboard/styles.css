@@ -23,10 +23,14 @@ body {
 }
 
 aside {
-    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
     background-color: #2C2931;
     max-width: 300px;
     z-index: 1;
+    transition: transform .3s;
 }
 
 aside img {
@@ -61,6 +65,83 @@ li>a {
     background-color: #4497FF;
     display: block;
     width: auto;
+}
+
+main {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    position: relative;
+}
+
+nav img {
+    position: absolute;
+    left: 2rem;
+    top: 2.25rem;
+}
+
+nav p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 111%;
+    letter-spacing: -12%;
+    color: #2D7DFF;
+    width: 100%;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.body {
+    display: grid;
+    place-items: center;
+    height: 80%;
+    padding-left: 2rem;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 89%;
+    color: #FFFFFF;
+}
+
+p {
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+    font-weight: 275;
+    font-size: 34px;
+    line-height: 111%;
+    color: #847D93;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 111%;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    margin-top: 3rem;
+    border: 1px solid #4D4D4D;
+    width: auto;
+    padding: 2.5rem 4rem;
+    position: relative;
+}
+
+button:before {
+    position: absolute;
+    content: "";
+    background: url("./images/akar-icons_arrow-right.png") no-repeat;
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 1.25em;
 }
 
 /*
