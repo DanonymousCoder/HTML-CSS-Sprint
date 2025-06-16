@@ -167,4 +167,56 @@ button:before {
     }
 }
 
-    {}
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: flex;
+    }
+
+    aside {
+        position: unset;
+        bottom: 1em;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+        height: 100%;
+    }
+
+    aside img {
+        display: none;
+    }
+
+    ul {
+        padding-top: 6em;
+    }
+
+    nav {
+        padding-left: 4rem;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .container {
+        background: transparent;
+    }
+
+    main {
+        background: #221F26 url("./images/illustration.jpg");
+        background-size: cover;
+        background-blend-mode: screen;
+        width: 100%;
+    }
+
+    /*
+    aside {
+        transform: translateX(0);
+        left: .5em;
+        top: 1em;
+        bottom: 1em;
+    }
+   */
+}
