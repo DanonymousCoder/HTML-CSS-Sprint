@@ -2,9 +2,46 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     background-color: #F4F4F4;
     height: 100vh;
+    padding: 2.5625rem 2.8125rem;
+}
+
+.head-txt {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #000000;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #565656;
+}
+
+input {
+    border-radius: 36px;
+    background-color: #FFFFFF;
+    position: relative;
+    border: none;
+    outline: none;
+    height: 60px;
+    padding-right: 30px;
+    width: 200px;
+}
+
+input::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background-image: url("./images/ant-design_search-outlined.png");
 }
