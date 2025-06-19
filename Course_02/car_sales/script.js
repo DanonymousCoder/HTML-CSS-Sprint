@@ -1,6 +1,7 @@
 const menu = document.getElementById("menu");
 const filter = document.getElementById("filter");
 const panelStyles = window.getComputedStyle(filter);
+const like = document.querySelectorAll(".bxr");
 
 
 menu.addEventListener('click', () => {
@@ -19,6 +20,11 @@ document.addEventListener("mouseup", (event) => {
         filter.style.clipPath = 'circle(0% at 100% 0%)';
     }
 })
+
+function toLike(r) {
+    r.classList.toggle("bxs-heart");
+    r.classList.toggle("bx-heart");
+}
 
 /**
  * menu.addEventListener("click", () => {
