@@ -8,7 +8,7 @@
 
 .container {
     background-color: #F4F4F4;
-    height: 100vh;
+    height: auto;
     padding: 2.5625rem 2.8125rem;
 }
 
@@ -38,11 +38,18 @@ p {
     color: #565656;
 }
 
-.options {
-    display: flex;
+main {
+    margin-top: 3em;
 }
 
-input {
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input input {
     border-radius: 36px;
     background-color: #FFFFFF;
     border: none;
@@ -55,7 +62,7 @@ input {
 .input {
     position: relative;
     height: 2.4375rem;
-    width: 100%;
+    width: 90%;
 }
 
 .input img {
@@ -68,6 +75,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .label {
@@ -75,18 +83,57 @@ input {
 }
 
 .filter {
-    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    right: 0;
+    top: 0;
+    margin-top: 3rem;
+    padding: 1.875rem 1.75rem;
+}
+
+.chk-cont {
+    display: flex;
+    gap: .5em;
+    margin-bottom: 1.5rem;
+}
+
+.chk-cont:last-of-type {
+    margin-bottom: 0;
+}
+
+.chk-cont label {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 .cars {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     margin-top: 2em;
+    padding: .9rem 1.375rem;
+}
+
+.cars:hover {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.address {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 100%;
 }
 
 .col-2 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .col-2 p {
@@ -94,15 +141,24 @@ input {
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
+    margin-top: 0;
+}
+
+i {
+    font-size: 2rem;
+}
+
+.address {
+    margin-bottom: 1em;
 }
 
 .car-name {
     text-decoration: none;
     color: #008AD8;
-}
-
-.cars p {
-    margin-top: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
 }
 
 
