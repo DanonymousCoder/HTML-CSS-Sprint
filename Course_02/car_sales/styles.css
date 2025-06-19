@@ -38,6 +38,10 @@ p {
     color: #565656;
 }
 
+.options {
+    display: flex;
+}
+
 input {
     border-radius: 36px;
     background-color: #FFFFFF;
@@ -50,8 +54,8 @@ input {
 
 .input {
     position: relative;
-    width: 17.375rem;
     height: 2.4375rem;
+    width: 100%;
 }
 
 .input img {
@@ -72,6 +76,33 @@ input {
 
 .filter {
     display: none;
+}
+
+.cars {
+    margin-top: 2em;
+}
+
+.col-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.col-2 p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.car-name {
+    text-decoration: none;
+    color: #008AD8;
+}
+
+.cars p {
+    margin-top: 1rem;
 }
 
 
