@@ -89,6 +89,8 @@ main {
     top: 0;
     margin-top: 3rem;
     padding: 1.875rem 1.75rem;
+    clip-path: circle(0% at 100% 0%);
+    transition: clip-path 0.3s ease-in-out;
 }
 
 .chk-cont {
@@ -138,7 +140,7 @@ main {
 
 .col-2 p {
     font-family: "Lexend Deca", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 24px;
     line-height: 100%;
     margin-top: 0;
