@@ -5,46 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 
     <title>Drone Landing Page</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <p>drone<span>.series</span></p>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    <p>drone<span>.series</span></p>
+                </div>
+
+                <div class="right">
+                    <img src="./images/dashicons_menu.png" alt="hamburger menu icon" class="hamburger" id="ham">
+
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">races</a></li>
+                        <li><a href="#">register</a></li>
+                        <li><a href="#">faq</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="hero">
+                <div class="text">
+                    <h1>
+                        DRONE RACING GONE WILD
+                    </h1>
+                    <p>
+                        Register now for the ultimate drone racing event.
+                        5 mile courses and over $10 million in prize money!
+                    </p>
+                </div>
+
+                <img src="./images/drone.png" alt="drone" class="desktop-hide">
+                <img src="./images/drone (1).png" alt="drone" class="mobile-hide">
             </div>
 
-            <div class="right">
-                <img src="./images/dashicons_menu.png" alt="hamburger menu icon" class="hamburger" id="ham">
+            <div class="purple">
 
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">races</a></li>
-                    <li><a href="#">register</a></li>
-                    <li><a href="#">faq</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
             </div>
-        </nav>
-
-        <div class="hero">
-            <div class="text">
-                <h1>
-                    DRONE RACING GONE WILD
-                </h1>
-                <p>
-                    Register now for the ultimate drone racing event.
-                    5 mile courses and over $10 million in prize money!
-                </p>
-            </div>
-
-            <img src="./images/drone.png" alt="drone" class="desktop-hide">
-            <img src="./images/drone (1).png" alt="drone" class="mobile-hide">
         </div>
-    </header>
+
+        <section class="quote">
+            <blockquote>
+                “the stadium is simply unreal. scrimba hall will make this the best drone racing event ever, period.”
+            </blockquote>
+        </section>
+    </div>
 </body>
 
 </html>

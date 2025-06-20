@@ -1,5 +1,116 @@
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: "Bebas Neue", sans-serif;
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --blue-color: #6889FF;
+    --green-color: #B2DD9E;
+    --purple-color: #7988BE;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header {
+    width: 80%;
+    background: var(--green-color) url("./images/ff3c78e95733ace0d249eadbf541de224e5e4c39.jpg") no-repeat center;
+    background-size: cover;
+    background-blend-mode: screen;
+    position: relative;
+    z-index: -2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p {
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 92%;
+    color: var(--blue-color);
+    background-color: var(--primary-color);
+    padding: .6875rem .75rem;
+    margin-left: -1.5em;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+nav img {
+    z-index: 1000000;
+    margin-right: .3em;
+}
+
+ul {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    width: 70%;
+}
+
+h1 {
+    margin-bottom: 1.75rem;
+    margin-top: 5.5rem;
+}
+
+.hero img {
+    margin-top: 5.6875rem;
+}
+
+.purple {
+    position: absolute;
+    background-color: var(--purple-color);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    z-index: -1;
+}
+
+section.quote {
+    width: 80%;
+    background: #303853;
+    height: 595px;
+    position: relative;
+}
+
+section.quote::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url("./images/7a175d37ce7b3d6ea97f84fd082b8945f2d2e875.jpg") no-repeat center;
+    opacity: .17;
+    background-size: cover;
+}
+
+.mobile-hide {
+    display: none;
 }
