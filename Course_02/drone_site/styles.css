@@ -36,7 +36,6 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .logo p {
@@ -59,8 +58,36 @@ nav img {
     margin-right: .3em;
 }
 
+.nav-links {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #303853;
+    z-index: 999999;
+    padding: 2.5625rem;
+    text-align: right;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
 ul {
-    display: none;
+    list-style: none;
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    text-align: right;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 142%;
 }
 
 .hero {
