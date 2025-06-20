@@ -80,7 +80,7 @@ h1 {
 }
 
 .hero img {
-    margin-top: 5.6875rem;
+    margin: 5.6875rem 0;
 }
 
 .purple {
@@ -99,6 +99,8 @@ section.quote {
     background: #303853;
     height: 595px;
     position: relative;
+    color: var(--secondary-color);
+    padding: 3.8125rem 2.5625rem;
 }
 
 section.quote::before {
@@ -109,6 +111,30 @@ section.quote::before {
     background: url("./images/7a175d37ce7b3d6ea97f84fd082b8945f2d2e875.jpg") no-repeat center;
     opacity: .17;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+blockquote {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    width: auto;
+}
+
+.imag {
+    width: 100%;
+}
+
+.imag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .mobile-hide {
