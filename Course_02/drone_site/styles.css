@@ -118,6 +118,50 @@ section.quote::before {
 blockquote {
     margin-bottom: 2rem;
     text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+section.quote hr {
+    border: 1px solid var(--secondary-color);
+    width: 28px;
+}
+
+section.footage {
+    width: 80%;
+    margin-top: 3.3125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+section.footage h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 92%;
+    margin-bottom: 1.75rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+section.footage p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142%;
+    margin-bottom: 1.75rem;
+    color: var(--primary-color);
+}
+
+section.footage p:last-of-type {
+    margin-bottom: 0;
 }
 
 .images {
