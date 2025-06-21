@@ -3,9 +3,11 @@ const closeNav = document.getElementById("close");
 const navBar = document.getElementById("navbar");
 
 ham.addEventListener("click", () => {
-    navBar.style.transform = "translateX(0)";
+    console.log("Showing")
+    navBar.classList.add("show");
+    console.log("Shown")
 });
 
 closeNav.addEventListener("click", () => {
-    navBar.style.transform = "translateX(100%)";
+    navBar.classList.remove("show");
 });

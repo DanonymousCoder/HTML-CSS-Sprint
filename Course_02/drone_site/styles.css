@@ -72,6 +72,10 @@ nav img {
     transition: transform 0.3s ease-in-out;
 }
 
+.nav-links.show {
+    transform: translateX(0);
+}
+
 ul {
     list-style: none;
     margin-top: 3.2rem;
@@ -303,9 +307,72 @@ address p {
         display: none;
     }
 
+    .logo {
+        font-size: 36px;
+    }
+
     .nav-links {
-        transform: translateX(0);
         display: flex;
-        height: auto;
+        height: 100px;
+        width: 550px;
+        background-color: transparent;
+        top: 0;
+        transform: translateX(0);
+        position: unset;
+        padding: 1rem;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .purple {
+        width: 40%;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .text {
+        position: absolute;
+        width: 50%;
+        left: -10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 97px;
+        text-align: left;
+    }
+
+    .hero p {
+        font-size: 24px;
+        line-height: 142%;
+        text-align: left;
+        width: 25rem;
+    }
+
+    section.quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-hide {
+        display: block;
+    }
+
+    .desktop-hide {
+        display: none;
     }
 }
