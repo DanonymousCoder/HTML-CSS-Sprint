@@ -64,7 +64,6 @@ nav img {
     right: 0;
     top: 0;
     height: 100vh;
-    width: 66%;
     background-color: #303853;
     z-index: 10000000;
     padding: 2.5625rem;
@@ -303,7 +302,7 @@ address p {
     display: none;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
     .hamburger {
         display: none;
     }
