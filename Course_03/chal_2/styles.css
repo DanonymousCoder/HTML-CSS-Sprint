@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family: 'Karla', sans-serif;
+    --body-bg: #1E1F25;
+    --btn-bg: #000;
+    --btn-color: #cbcbcb;
+    --btn-color-hover: #fff;
+    --grad-color1: #eeaf61;
+    --grad-color2: #fb9062;
+    --grad-color3: #ee5d6c;
+    --grad-color4: #ce4993;
+    --grad-color5: #6a0d83;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--body-bg);
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: inherit;
+    font-family: var(--font-family);
+    padding: 1rem 2rem;
+    border: none;
+}
+
+.button-border {
+    height: 15%;
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--btn-color);
+}
+
+button-border:hover,
+button-border:focus {
+    color: var(--btn-color-hover);
+    height: 16%;
+    padding: .7em;
+
+}
