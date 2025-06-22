@@ -28,7 +28,7 @@ body {
 
 button {
     background-color: var(--btn-bg);
-    color: inherit;
+    color: var(--btn-color);
     font-family: var(--font-family);
     padding: 1rem 2rem;
     border: none;
@@ -36,18 +36,19 @@ button {
 
 .button-border {
     height: 15%;
-    padding: .5em;
+    padding: .3em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: var(--btn-color);
+    background: linear-gradient(90deg, var(--grad-color1), var(--grad-color2),
+            var(--grad-color3), var(--grad-color4), var(--grad-color5));
 }
 
-button-border:hover,
-button-border:focus {
+.button-border:hover,
+.button-border:focus {
     color: var(--btn-color-hover);
-    height: 16%;
-    padding: .7em;
-
+    height: 15%;
+    padding: .4em;
+    background: linear-gradient(270deg, var(--grad-color1), var(--grad-color2),
+            var(--grad-color3), var(--grad-color4), var(--grad-color5));
 }
