@@ -1,0 +1,38 @@
+:root {
+    --color-light: lightgray;
+    --color-dark: darkgray;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: .7em;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-dark);
+    border-radius: 50%;
+    animation: fades infinite 2s;
+}
+
+@keyframes fades {
+    from {
+        background-color: var(--color-dark);
+    }
+
+    to {
+        background-color: var(--color-dark);
+        height: 50px;
+        width: 50px;
+    }
+}
