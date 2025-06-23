@@ -36,6 +36,7 @@ img {
 
 .card {
     width: 100%;
+    max-width: 300px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -45,6 +46,10 @@ img {
     border-radius: 10px;
     overflow-y: visible;
     margin-bottom: 30px;
+}
+
+.card:hover .card-stats {
+    display: flex;
 }
 
 .card-thumbnail {
