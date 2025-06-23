@@ -1,0 +1,106 @@
+/* Colors 
+body background: #131417
+tile background: #1e1f26 
+username: #b7bbc8
+card stats background: #131417
+*/
+
+:root {
+    --font-main: 'Noto Sans', sans-serif;
+    --bg-main: #131417;
+    --bg-card: #1e1f26;
+    --bg-stats: #131417;
+    --username: #b7bbc8;
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-main);
+    padding: 2rem 1rem;
+    font-family: var(--font-main);
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    background-color: var(--bg-card);
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    overflow-y: visible;
+    margin-bottom: 30px;
+}
+
+.card-thumbnail {
+    height: 60%;
+}
+
+.card-thumbnail img {
+    border-radius: 10px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-avatar img {
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+    color: var(--username);
+}
+
+.card-details:hover {
+    cursor: pointer;
+}
+
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: none !important;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: .5em;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-align: left;
+    background-color: var(--bg-stats);
+    padding: .5rem;
+    display: flex;
+    gap: .5em;
+    color: var(--username);
+}
