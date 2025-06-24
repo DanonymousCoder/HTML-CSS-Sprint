@@ -1,0 +1,44 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+:root {
+    --blue: #0269A6;
+    --yellow: #FECC00;
+    --flag-height: 150px;
+    --flag-width: calc(var(--flag-height) * 8/5);
+}
+
+.flag-sweden {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 8/5);
+    background-color: var(--blue);
+    display: grid;
+    grid-template-areas:
+        '. . a . . .'
+        'b b b b b b'
+        '. . .a . . .'
+    ;
+    position: relative;
+}
+
+.stripe-yellow {
+    background-color: var(--yellow);
+    height: calc(1/5 * var(--flag-height));
+    width: calc(var(--flag-height) * 8/5);
+    grid-area: b;
+}
+
+.stripe-yellow2 {
+    background-color: var(--yellow);
+    height: var(--flag-height);
+    width: calc(1/5 * var(--flag-height));
+    position: absolute;
+    left: calc(5/16 * var(--flag-width));
+}
