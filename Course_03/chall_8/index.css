@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(59, 44, 44);
+}
+
+p {
+    font-size: 30px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+span {
+    background-color: blue;
+    color: white;
+    padding: .5rem 1rem;
+}
+
+span::after {
+    content: "";
+    animation: swap 10s infinite;
+}
+
+@keyframes swap {
+    0% {
+        content: "Coding";
+    }
+
+    25% {
+        content: "Qur'an";
+    }
+
+    50% {
+        content: "Good food";
+    }
+
+    100% {
+        content: "Gaming";
+    }
+}
