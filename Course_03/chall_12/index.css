@@ -1,0 +1,50 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --red: #FF0002;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flag-swiss {
+    height: 300px;
+    width: 300px;
+    background-color: var(--red);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    column-gap: 0;
+    grid-template-areas:
+        ". . . . ."
+        ". . a . ."
+        ". b b b ."
+        ". . c . ."
+        ". . . . ."
+    ;
+}
+
+.cross1 {
+    background-color: #FFFFFF;
+    grid-area: a;
+}
+
+.cross2 {
+    background-color: #FFFFFF;
+    grid-area: b;
+}
+
+.cross3 {
+    background-color: #FFFFFF;
+    grid-area: c;
+}
