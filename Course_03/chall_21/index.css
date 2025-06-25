@@ -15,13 +15,19 @@ html {
 }
 
 .card {
-    position: relative;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 200px;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     background-color: var(--jeopardy-blue);
     color: var(--font-color-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2em
 }
 
 .card:hover {
