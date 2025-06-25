@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --card-height: 250px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: var(--card-height);
+    width: calc(var(--card-height) * 2/3);
+    color: red;
+    padding: .5em;
+    font-size: 1em;
+}
+
+.middle {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    font-size: 3em;
+}
+
+.middle :nth-child(3),
+.middle :nth-child(4) {
+    transform: rotate(180deg);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: rotate(180deg);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left div:first-child,
+.right div:first-child {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
