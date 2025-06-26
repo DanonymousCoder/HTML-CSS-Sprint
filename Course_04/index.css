@@ -9,8 +9,8 @@
 }
 
 .box {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 .red {
@@ -25,9 +25,17 @@
     background-color: blue;
 }
 
-.logo {
-    transition: all .5s;
-    animation: expand 4.5s ease-in-out 0.5s infinite both;
+.box {
+    animation: expand 9.5s cubic-bezier(.17, .67, 1, .49) 0.5s infinite both;
+    /*animation: expand 9.5s ease-in-out 0.5s infinite both;*/
 }
 
-@keyframes expand {}
+@keyframes expand {
+    100% {
+        transform: translate(50px, 0) scale(0, 0) skew(180deg, 0deg) rotate(45deg);
+    }
+
+    0% {
+        transform: translate(0, 0) scale(1, 1) skew(0deg, 0deg) rotate(0deg);
+    }
+}
