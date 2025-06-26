@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 3em;
+}
+
+.box {
+    height: 20px;
+    width: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.logo {
+    transition: all .5s;
+    animation: expand 4.5s ease-in-out 0.5s infinite both;
+}
+
+@keyframes expand {}
