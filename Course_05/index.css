@@ -35,6 +35,11 @@ h1 {
     gap: 10px;
 }
 
+.box:first-of-type,
+.box:last-of-type {
+    --black: rgb(94, 3, 3);
+}
+
 .box {
     background-color: var(--black);
     display: flex;
