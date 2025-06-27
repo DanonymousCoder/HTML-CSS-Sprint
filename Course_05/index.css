@@ -46,3 +46,9 @@ h3 {
     text-align: center;
     color: var(--white);
 }
+
+@media all and (max-width: 450px) {
+    :root {
+        --column: 200px;
+    }
+}
