@@ -39,3 +39,31 @@
         transform: translate(0, 0) scale(1, 1) skew(0deg, 0deg) rotate(0deg);
     }
 }
+
+h1 {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffcdee;
+    text-align: center;
+    margin: 2em auto;
+    transition: all 0.5s ease-in-out;
+    animation: opacity 0.5s cubic-bezier(.17, .67, 1, .49) 10s 1 both;
+}
+
+h1:hover {
+    color: #d3c6ce;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+@keyframes opacity {
+    0% {
+        font-size: 80px;
+        opacity: 0%;
+    }
+
+    100% {
+        font-size: 40px;
+        opacity: 100%;
+    }
+}
