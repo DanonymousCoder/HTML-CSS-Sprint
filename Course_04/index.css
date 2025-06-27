@@ -28,6 +28,10 @@
 .box {
     animation: expand 9.5s cubic-bezier(.17, .67, 1, .49) 0.5s infinite both;
     /*animation: expand 9.5s ease-in-out 0.5s infinite both;*/
+    --webkit-animation: expand 9.5s cubic-bezier(.17, .67, 1, .49) 0.5s infinite both;
+    --ms-animation: expand 9.5s cubic-bezier(.17, .67, 1, .49) 0.5s infinite both;
+    --moz-animation: expand 9.5s cubic-bezier(.17, .67, 1, .49) 0.5s infinite both;
+    --o-animation: expand 9.5s cubic-bezier(.17, .67, 1, .49) 0.5s infinite both;
 }
 
 @keyframes expand {
@@ -47,7 +51,15 @@ h1 {
     text-align: center;
     margin: 2em auto;
     transition: all 0.5s ease-in-out;
+    --webkit-transition: all 0.5s ease-in-out;
+    --ms-transition: all 0.5s ease-in-out;
+    --moz-transition: all 0.5s ease-in-out;
+    --o-transition: all 0.5s ease-in-out;
     animation: opacity 0.5s cubic-bezier(.17, .67, 1, .49) 10s 1 both;
+    --webkit-animation: opacity 0.5s cubic-bezier(.17, .67, 1, .49) 10s 1 both;
+    --ms-animation: opacity 0.5s cubic-bezier(.17, .67, 1, .49) 10s 1 both;
+    --moz-animation: opacity 0.5s cubic-bezier(.17, .67, 1, .49) 10s 1 both;
+    --o-animation: opacity 0.5s cubic-bezier(.17, .67, 1, .49) 10s 1 both;
 }
 
 h1:hover {
