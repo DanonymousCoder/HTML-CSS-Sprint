@@ -5,5 +5,44 @@
 }
 
 :root {
-    --black: rgb(56, 6, 6);
+    --black: red;
+    --white: rgb(247, 209, 209);
+    --column: 200px 200px;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "Italiana", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--black);
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: var(--column);
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+
+.box {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    color: var(--white);
 }
