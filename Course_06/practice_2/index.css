@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+header,
+section {
+    padding: 25px 50px;
+}
+
+header,
+.section-two {
+    background-color: #2E354F;
+}
+
+.container,
+h1 {
+    width: 620px;
+}
+
+h1 {
+    color: #FFF;
+    font-weight: 900;
+}
+
+h2 {
+    color: #EF5839;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-top: 25px;
+}
+
+strong {
+    font-weight: 900;
+}
