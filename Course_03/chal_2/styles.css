@@ -35,7 +35,6 @@ button {
 }
 
 .button-border {
-    height: 15%;
     padding: .3em;
     display: flex;
     justify-content: center;
