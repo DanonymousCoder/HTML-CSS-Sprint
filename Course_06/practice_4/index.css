@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: plum;
+    font-size: 1.125rem;
 }
 
 .container {
@@ -17,6 +18,7 @@ body {
     width: 80%;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1000px;
 }
 
 header {
@@ -24,13 +26,17 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 1em;
     text-align: center;
 }
 
 h1 span {
     color: purple;
+}
+
+h5 {
+    font-size: 1.5rem;
 }
 
 .img {
@@ -45,12 +51,6 @@ h1 span {
     gap: 2em;
 }
 
-.col:nth-child(1) {
-    flex-basis: 1;
-    background-color: lightblue;
-}
-
-.col:nth-child(1) {
-    flex-basis: 1;
-    background-color: lightblue;
+.columns .col:last-of-type {
+    background-color: rebeccapurple;
 }
