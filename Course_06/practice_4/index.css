@@ -53,4 +53,23 @@ h5 {
 
 .columns .col:last-of-type {
     background-color: rebeccapurple;
+    padding: .5em;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
 }
