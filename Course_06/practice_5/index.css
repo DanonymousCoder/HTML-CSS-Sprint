@@ -40,6 +40,15 @@ section {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    width: 90%;
+    max-width: 900px;
+}
+
 .logo {
     margin-bottom: 1.3em;
 }
@@ -61,7 +70,7 @@ nav a {
     color: #707070;
     font-size: 1rem;
     text-decoration: none;
-    padding: .25em 0;
+    padding-bottom: .25em;
 }
 
 nav a:hover,
@@ -76,4 +85,8 @@ nav a:focus {
 .current-tab:hover,
 .current-tab:focus {
     border-bottom: 1px solid #1792D2;
+}
+
+.logo {
+    text-align: left;
 }
