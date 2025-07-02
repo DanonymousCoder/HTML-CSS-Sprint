@@ -31,8 +31,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f8f8;
-    padding: 3em 0;
+    padding: 2em 0;
     text-align: center;
     margin: 0 auto;
 }
@@ -43,6 +42,10 @@ nav {
     justify-content: space-between;
     width: 90%;
     max-width: 900px;
+}
+
+.section-1 {
+    background-color: #f8f8f8;
 }
 
 .logo {
