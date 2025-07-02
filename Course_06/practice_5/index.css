@@ -42,7 +42,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    max-width: 900px;
     flex-direction: column;
     padding: 2em 0;
 }
@@ -251,4 +250,56 @@ footer .bold {
     }
 }
 
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    nav {
+        flex-direction: row;
+        max-width: 1400px;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .section-2 {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    .article-other {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left {
+        width: 35%;
+    }
+
+    .article-other .article-info {
+        text-align: left;
+    }
+
+    .right {
+        width: 60%;
+    }
+
+    .other-image {
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    aside {
+        margin: 0;
+        width: 25%;
+    }
+}
