@@ -22,10 +22,6 @@ ul {
     gap: 2em;
 }
 
-.container {
-    background-color: white;
-}
-
 section {
     width: 90%;
     display: flex;
@@ -44,25 +40,11 @@ nav {
     max-width: 900px;
 }
 
-.section-1 {
-    background-color: #f8f8f8;
-}
-
-.logo {
-    margin-bottom: 1.3em;
-}
-
 h1 {
     margin-bottom: .125em;
     font-size: 2rem;
     font-family: 'Lora', serif;
     font-weight: 400;
-}
-
-.logo p {
-    font-size: .75rem;
-    color: #1792D2;
-    text-transform: uppercase;
 }
 
 nav a {
@@ -75,6 +57,24 @@ nav a {
 nav a:hover,
 nav a:focus {
     color: #1792D2;
+}
+
+.container {
+    background-color: white;
+}
+
+.section-1 {
+    background-color: #f8f8f8;
+}
+
+.logo {
+    margin-bottom: 1.3em;
+}
+
+.logo p {
+    font-size: .75rem;
+    color: #1792D2;
+    text-transform: uppercase;
 }
 
 .current-tab {
