@@ -23,10 +23,6 @@ ul {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     background-color: white;
 }
 
@@ -38,13 +34,13 @@ section {
     background-color: #f8f8f8;
     padding: 3em 0;
     text-align: center;
+    margin: 0 auto;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     width: 90%;
     max-width: 900px;
 }
@@ -89,4 +85,14 @@ nav a:focus {
 
 .logo {
     text-align: left;
+}
+
+@media (max-width: 675px) {
+    section {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
