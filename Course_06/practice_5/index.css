@@ -181,6 +181,7 @@ aside {
     flex-direction: column;
     gap: 1.5em;
     color: #143774;
+    width: 100%;
 }
 
 aside:nth-child(1) .widget-title {
@@ -220,3 +221,34 @@ aside:nth-child(1) .widget-title {
     order: 0;
     margin-bottom: 0;
 }
+
+footer {
+    background-color: #143774;
+    text-align: center;
+    padding: 3em 0;
+    margin: 0;
+}
+
+footer p {
+    color: #FFFFFF;
+    opacity: 54%;
+}
+
+footer .bold {
+    font-weight: 700;
+    font-size: 1.125rem;
+    opacity: 87%;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .article-title {
+        margin-top: -15px;
+    }
+
+    .article-title-2 {
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 1000px) {}
