@@ -105,6 +105,29 @@ nav a:focus {
  *  Article
     ===========*/
 
+/*Featured article in the about page*/
+
+.featured-image-2 {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.article-featured-about {
+    border-bottom: none !important;
+}
+
+.article-title-2 {
+    margin: 2em 0 1.5em 0 !important;
+}
+
+h3 {
+    color: #1792D2;
+    font-weight: 400;
+    margin: 1.5em 0;
+}
+
+/* about page end*/
+
 article {
     text-align: left;
 }
@@ -138,6 +161,7 @@ span {
     color: #143774;
     font-size: 1.5rem;
     margin-top: .7em;
+    font-weight: 400;
 }
 
 .article-content {
@@ -251,6 +275,18 @@ footer .bold {
 }
 
 @media (min-width: 1000px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 {
+        max-width: 90%;
+        padding: 3em 0;
+    }
+
     nav {
         flex-direction: row;
         max-width: 1400px;
