@@ -154,7 +154,7 @@ input::placeholder {
     Media Queries
     =============== */
 
-@media (min-width:1100px) {
+@media (min-width:1000px) {
     .container {
         display: flex;
         font-size: 1.3rem;
