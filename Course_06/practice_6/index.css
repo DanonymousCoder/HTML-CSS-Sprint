@@ -19,7 +19,6 @@ img {
 h1 {
     color: #05CBE9;
     font-size: 1.75rem;
-    margin-bottom: 1.5em;
 }
 
 p {
@@ -27,7 +26,7 @@ p {
     letter-spacing: 1px;
 }
 
-.card-foot p {
+.card-read {
     font-size: 20px;
     opacity: .5;
 }
@@ -54,44 +53,57 @@ a {
     ========== */
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1em;
 }
 
 .card {
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    min-height: 600px;
+    background-color: #111D4A;
+    display: grid;
+    grid-template: 200px 1em 100px 100px 150px/1em 100px 200px 1em;
 }
 
 .component-img {
-    flex-basis: 300px;
-    max-height: 30vh;
     object-fit: cover;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 100%;
+    width: 100%;
 }
 
-main {
-    background-color: #111D4A;
-    height: 40vh;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
+.card-head {
+    grid-column: 2 / -2;
+    grid-row: 3 / 4;
 }
 
-.card-foot {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: auto;
+.card-sub {
+    grid-column: 2 / -2;
+    grid-row: 4 /5;
 }
 
+.card-read {
+    grid-column: 2 / 3;
+    grid-row: 5/6;
+    align-self: end;
+}
+
+.card-btn {
+    grid-column: 3 / 4;
+    grid-row: 5/6;
+    align-self: end;
+    justify-self: end;
+}
 
 /* ==========
     media queries
     ========== */
 
 @media(max-width: 340px) {
-    main {
-        padding: 1em;
+    .card {
+        grid-template: 200px 1em 100px 100px 150px/1em 100px 180px 1em;
     }
 
     a {
@@ -100,27 +112,45 @@ main {
 }
 
 @media (min-width: 600px) {
-    .container {
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
 
     body {
         font-size: 1.3rem;
     }
 
     .card {
-        flex-direction: row;
+        grid-template: 1em 100px 100px 200px 1em/ 200px 100px 300px;
+        grid-gap: 1em;
     }
 
     .component-img {
-        min-height: 500px;
+        grid-column: 1 / 2;
+        grid-row: -1 / 1;
     }
 
-    main {
-        max-width: 600px;
-        min-height: 500px;
+    .card-head {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        background-color: #05CBE9;
+        height: 100%;
+        width: 100%;
+    }
+
+    .card-sub {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .card-read {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-self: end;
+    }
+
+    .card-btn {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        align-self: end;
+        justify-self: end;
     }
 
     h1 {
