@@ -115,11 +115,12 @@ main {
     }
 
     .component-img {
-        max-height: 40vh;
+        min-height: 500px;
     }
 
     main {
         max-width: 600px;
+        min-height: 500px;
     }
 
     h1 {
