@@ -111,49 +111,49 @@ a {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 
     body {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .card {
-        grid-template: 1em 100px 100px 200px 1em/ 200px 100px 300px;
-        grid-gap: 1em;
+        grid-template: 1em auto auto 150px 1em / 350px auto auto 1em;
+        grid-gap: 2em;
+        max-width: 1000px;
     }
 
     .component-img {
         grid-column: 1 / 2;
-        grid-row: -1 / 1;
+        grid-row: 1 / -1;
     }
 
     .card-head {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        background-color: #05CBE9;
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
         height: 100%;
         width: 100%;
     }
 
     .card-sub {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
     }
 
     .card-read {
         grid-column: 2 / 3;
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
         align-self: end;
     }
 
     .card-btn {
         grid-column: 3 / 4;
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
         align-self: end;
         justify-self: end;
     }
 
     h1 {
-        font-size: 2.25rem;
+        font-size: 3.25rem;
     }
 }
