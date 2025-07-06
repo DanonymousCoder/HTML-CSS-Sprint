@@ -5,9 +5,105 @@
 }
 
 body {
-    font-family: "Basic", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 img {
     width: 100%;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1em repeat(3, 1fr) 1em;
+}
+
+/* ==========
+    typography
+    ========== */
+
+h1,
+h4,
+strong,
+span {
+    font-weight: 700;
+}
+
+h4 {
+    margin-top: 2em;
+}
+
+
+/* ==========
+    header section
+    ========== */
+header {
+    background: url(img/hero-bg.jpg) black no-repeat bottom right;
+    background-position: center;
+    background-size: cover;
+    padding: 4em 0;
+    position: relative;
+}
+
+/* nav section */
+nav {
+    display: flex;
+    grid-column: 2 / 4;
+    background-color: aqua;
+    align-self: start;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    background-color: #FFE600;
+    grid-column: 2 / 3;
+    height: 70px;
+    width: 192px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* hero section*/
+
+.hero {
+    grid-column: 2 / 4;
+}
+
+h1 {
+    color: white;
+}
+
+/* ==========
+    main section
+    ========== */
+
+/* info section*/
+
+.columns {
+    text-align: center;
+}
+
+.col {
+    grid-column: 2 / -2;
+}
+
+
+/* ==========
+    footer section
+    ========== */
+
+footer {
+    background-color: #EBEBEB;
+    margin-top: 3em;
+}
+
+.footer-txt {
+    grid-column: 2 / 4;
+}
+
+.socials {
+    grid-column: 4 / span 1;
 }

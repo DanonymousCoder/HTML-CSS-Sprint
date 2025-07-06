@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link to Basic San font -->
+    <!-- Link to Basic San & Montserrat font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Basic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="index.css">
@@ -22,23 +28,26 @@
         <!-- 
             Navbar + Hero Section
         -->
-        <header>
+        <header class="main-grid">
+
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
             <!-- 
                 Navbar
-            -->
-            <nav>
-                <div class="logo">
-                    <p>Jake&Elwood</p>
-                </div>
+
+                <nav>
                 <ul class="nav-links">
                     <li><a href="#">home</a></li>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
+            -->
+
 
             <!-- 
-                Navbar
+                hero section
             -->
             <div class="hero">
                 <h1>The only marketing agency on <strong>a mission from God,</strong> fully dedicated to increase your
@@ -51,7 +60,12 @@
             </div>
         </header>
 
-        <div class="columns">
+
+        <!-- 
+            Info Section
+        -->
+
+        <div class="columns main-grid">
             <div class="col">
                 <h4 class="info-head">About Us</h4>
                 <p class="info-text">We grew up in downtown Chicago, and we used to play in a band. <span
@@ -76,18 +90,23 @@
             </div>
         </div>
 
-        <footer>
+
+        <!-- 
+            Footer Section
+        -->
+
+        <footer class="main-grid">
             <div class="footer-txt">
-                <h2>Jake&Elwood</h2>
+                <img src="./img/logo.png" alt="">
                 <p>Two brothers from Chicago that are just trying to pay back their debt by helping others with their
                     SEO, SEM, and Content Marketing needs.</p>
                 <p>© Jake&Elwood 2019</p>
             </div>
 
             <ul class="socials">
-                <li><a href="#" class="social-link"></a></li>
-                <li><a href="#" class="social-link"></a></li>
-                <li><a href="#" class="social-link"></a></li>
+                <li><a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </footer>
     </div>
