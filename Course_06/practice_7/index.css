@@ -6,6 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -118,6 +119,10 @@ h1 {
     color: white;
 }
 
+.footer-txt p {
+    margin: 2em 0;
+}
+
 /* ==========
     main section
     ========== */
@@ -155,6 +160,11 @@ footer {
 .footer-txt {
     grid-area: footer-txt;
     text-align: center;
+    opacity: .50;
+}
+
+footer .copyright-text {
+    opacity: .50;
 }
 
 .socials {
