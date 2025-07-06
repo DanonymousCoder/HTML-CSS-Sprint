@@ -6,7 +6,12 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
 }
+
+/* ==========
+    GLOBAL STYLES
+    ========== */
 
 img {
     width: 100%;
@@ -17,6 +22,14 @@ img {
     grid-template-columns: 1em repeat(3, 1fr) 1em;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* ==========
     typography
     ========== */
@@ -24,12 +37,41 @@ img {
 h1,
 h4,
 strong,
-span {
+span,
+.btn {
     font-weight: 700;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
 
 h4 {
     margin-top: 2em;
+}
+
+strong {
+    color: #FFE600;
+}
+
+.hero p {
+    color: #FFFFFF;
+    margin: 2em 0;
+}
+
+.p-strong {
+    color: #FFFFFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #FFE600;
+    text-decoration: none;
+    color: #000000;
+    font-size: .875rem;
+    letter-spacing: 1px;
 }
 
 
@@ -100,10 +142,30 @@ footer {
     margin-top: 3em;
 }
 
+.footer-grid {
+    grid-template-areas:
+        ". socials socials socials ."
+        ". footer-txt footer-txt footer-txt .";
+}
+
+.footer-logo {
+    max-width: 190px;
+}
+
 .footer-txt {
-    grid-column: 2 / 4;
+    grid-area: footer-txt;
+    text-align: center;
 }
 
 .socials {
-    grid-column: 4 / span 1;
+    grid-area: socials;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 3em 0 2em;
+}
+
+.social-link {
+    color: #000000;
+    font-size: 2rem;
 }
