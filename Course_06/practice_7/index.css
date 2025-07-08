@@ -24,6 +24,13 @@ img {
     grid-template-columns: 1em repeat(3, 1fr) 1em;
 }
 
+@media (min-width: 1000px) {
+    .main-grid {
+        grid-template-columns: 3em repeat(3, 1fr) 3em;
+        grid-column-gap: 1.5em;
+    }
+}
+
 ul {
     list-style: none;
 }
@@ -167,12 +174,6 @@ header {
 
 @media (min-width: 1000px) {
 
-    header {
-        grid-template-areas:
-            ". logo navlinks nav-links ."
-            ". hero hero . .";
-    }
-
     #open-nav,
     #close-nav {
         display: none;
@@ -246,7 +247,15 @@ header {
     }
 }
 
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    .col {
+        grid-column: span 1;
+    }
+
+    .col:first-of-type {
+        grid-column: 2 / span 1;
+    }
+}
 
 
 /* ==========
