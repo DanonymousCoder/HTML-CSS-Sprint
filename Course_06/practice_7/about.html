@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Basic San & Montserrat font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Basic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Grid practice</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 
+            Navbar + Hero Section
+        -->
+        <header class="main-grid">
+
+            <!-- 
+                Navbar
+            
+            -->
+            <div class="top-nav">
+
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <button aria-label="Open navigation menu" id="open-nav"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <ul class="nav-links">
+                <button aria-label="Close navigation menu" id="close-nav">&times;</button>
+                <li><a href="#" class="nav-link">home</a></li>
+                <li><a href="#" class="nav-link on">about us</a></li>
+                <li><a href="#" class="nav-link">contact</a></li>
+            </ul>
+
+
+            <!-- 
+                About US
+            -->
+
+            <section class="about main-grid">
+                <div class="abt-head">
+                    <h2>About us.</h2>
+                    <p>We’re two brothers from Chicago. We can help you with SEO, SEM, content marketing and whatever
+                        else.
+                    </p>
+                </div>
+                <div class="abt-img">
+                    <img src="./img/about-me.jpg" alt="">
+                </div>
+
+                <div class="abt-txt">
+                    <h3></h3>
+                    <p></p>
+                    <p></p>
+                    <h3></h3>
+                    <p></p>
+                    <p></p>
+                </div>
+            </section>
+
+
+            <!-- 
+            Footer Section
+        -->
+
+            <footer class="footer-grid main-grid">
+                <div class="footer-txt">
+                    <img src="./img/logo.png" alt="" class="footer-logo">
+                    <p>Two brothers from Chicago that are just trying to pay back their debt by helping others with
+                        their
+                        SEO, SEM, and Content Marketing needs.</p>
+                    <p class="copyright-text">© Jake&Elwood 2019</p>
+                </div>
+
+                <ul class="socials">
+                    <li><a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </footer>
+    </div>
+
+    <!-- 
+        External JS file
+    -->
+    <script src="script.js"></script>
+</body>
+
+</html>
