@@ -325,6 +325,20 @@ header {
         grid-template-areas:
             ". head head head ."
             ". image text text .";
+        grid-column-gap: 3em;
+    }
+
+    .abt-head {
+        grid-area: head;
+    }
+
+    .abt-img {
+        grid-area: image;
+        height: 220px;
+    }
+
+    .abt-txt {
+        grid-area: text;
     }
 }
 
@@ -335,18 +349,37 @@ header {
     text-align: center;
 }
 
-.abt-head {
-    grid-area: head;
+.about h2 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 270px;
+    background-color: #FFE600;
+    margin: 0 auto;
+    margin-left: .5em;
+    margin-top: -.75em;
+    margin-bottom: .5em;
+}
+
+.about .bold {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.1;
 }
 
 .abt-img {
-    grid-area: image;
-    height: 220px;
+    width: 95%;
+    max-height: 150px;
+    object-fit: contain;
 }
 
 .abt-txt {
     text-align: left;
-    grid-area: text;
 }
 
 .abt-txt h3::after {
