@@ -320,6 +320,14 @@ header {
     margin: 3em 0 2em;
 }
 
+@media (min-width: 1000px) {
+    .about {
+        grid-template-areas:
+            ". head head head ."
+            ". image text text .";
+    }
+}
+
 .abt-head,
 .abt-img,
 .abt-txt {
@@ -327,8 +335,18 @@ header {
     text-align: center;
 }
 
+.abt-head {
+    grid-area: head;
+}
+
+.abt-img {
+    grid-area: image;
+    height: 220px;
+}
+
 .abt-txt {
     text-align: left;
+    grid-area: text;
 }
 
 .abt-txt h3::after {
