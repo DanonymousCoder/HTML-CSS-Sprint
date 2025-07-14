@@ -322,10 +322,14 @@ header {
 
 @media (min-width: 1000px) {
     .about {
+        display: grid;
+        grid-template-columns: 1em repeat(3, 1fr) 1em;
         grid-template-areas:
             ". head head head ."
-            ". image text text .";
+            ". image textt textt ."
+            ". . textt textt .";
         grid-column-gap: 3em;
+        width: 100%;
     }
 
     .abt-head {
@@ -334,11 +338,19 @@ header {
 
     .abt-img {
         grid-area: image;
-        height: 220px;
+        max-width: 25%;
+        justify-self: flex-start;
+    }
+
+    .abt-img img {
+        width: 100%;
+        border-color: aqua;
     }
 
     .abt-txt {
-        grid-area: text;
+        grid-area: textt;
+        width: 70%;
+        justify-self: flex-end;
     }
 }
 
@@ -349,9 +361,18 @@ header {
     text-align: center;
 }
 
+.design {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .about h2 {
     font-weight: 900;
     font-size: 3rem;
+    position: relative;
+    z-index: 2;
+    width: 300px;
 }
 
 h2::after {
@@ -361,9 +382,11 @@ h2::after {
     width: 270px;
     background-color: #FFE600;
     margin: 0 auto;
-    margin-left: .5em;
+    position: absolute;
     margin-top: -.75em;
     margin-bottom: .5em;
+    z-index: -1;
+    left: 0;
 }
 
 .about .bold {
@@ -374,8 +397,12 @@ h2::after {
 
 .abt-img {
     width: 95%;
-    max-height: 150px;
-    object-fit: contain;
+}
+
+.abt-img img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 180px;
 }
 
 .abt-txt {
