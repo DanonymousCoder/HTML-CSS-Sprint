@@ -24,7 +24,7 @@ img {
     grid-template-columns: 1em repeat(3, 1fr) 1em;
 }
 
-.other-img {
+.other-img img {
     margin-top: 2em;
     border-right: 10px solid #000000;
     border-bottom: 10px solid #000000;
@@ -342,11 +342,6 @@ header {
         justify-self: flex-start;
     }
 
-    .abt-img img {
-        width: 100%;
-        border-color: aqua;
-    }
-
     .abt-txt {
         grid-area: textt;
         width: 70%;
@@ -397,6 +392,7 @@ h2::after {
 
 .abt-img {
     width: 95%;
+    text-align: left;
 }
 
 .abt-img img {
