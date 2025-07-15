@@ -125,6 +125,7 @@ strong {
     color: #000000;
     font-size: .875rem;
     letter-spacing: 1px;
+    border: none;
 }
 
 .footer-txt p {
@@ -412,6 +413,50 @@ h2::after {
 
 .abt-txt p {
     margin: 1em 0;
+}
+
+
+
+
+/* ==========
+    Contact page
+    ========== */
+.cont-txt {
+    text-align: left !important;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+.contact-box {
+    width: 50%;
+}
+
+input,
+textarea {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input {
+    height: 50px;
+}
+
+.contact-btn {
+    max-width: 150px;
 }
 
 
