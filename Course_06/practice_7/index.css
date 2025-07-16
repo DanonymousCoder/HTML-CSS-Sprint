@@ -443,12 +443,41 @@ form {
 
 .contact-box {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5em;
+}
+
+label {
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
 }
 
 input,
 textarea {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    outline: none;
+    transform: scale(1);
+    padding: .5em;
+}
+
+textarea {
+    padding: 1em;
+}
+
+input:focus,
+textarea:focus {
+    transform: scale(1.05);
 }
 
 input {
@@ -456,7 +485,15 @@ input {
 }
 
 .contact-btn {
-    max-width: 150px;
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .contact-btn {
+        max-width: 150px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+    }
 }
 
 
